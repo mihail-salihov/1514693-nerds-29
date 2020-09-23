@@ -1,0 +1,162 @@
+:root {
+  /* body*/
+  --basic-black: #000000;
+  /* main-header */
+  --basic-color-white: #EEEEEE;
+  /*main-wrapper*/
+  --main-basic-color: #888888;
+  /*main-footer*/
+  --footer-basic-color: #888888;
+}
+
+.main-header {
+  background-color: var(--basic-color-white);
+  color: var(--basic-black);
+}
+
+.main-wrapper {
+  background-color: var(--main-basic-color);
+  color: var(--basic-black);
+}
+
+.main-footer {
+  background-color: var(--footer-basic-color);
+  color: var(--basic-black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-color-white);
+}
+
+/* Навигация Студия -- Клиенты -- Магазин -- Контакты */
+.site-navigation {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* Корзина */
+.basket {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* Приемущества Долго, дорого, скрупулёзно */
+.features h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* кнопки Узнать больше -- Заказать -- Напишите нам */
+.button {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Веб-сайты -- Приложения -- Презентации */
+/*Веб-сайты*/
+.item-list-first h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.item-list-first p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Приложения */
+.item-list-second h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.item-list-second p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Презентации */
+.item-list-third h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.item-list-third p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Мы маленькая, но гордая студия из Краснодара */
+.benefits h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.benefits p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.benefits h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.benefits-list {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Уровень самоотдачи */
+.preview h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Уровень саиоотдачи, Соблюдение сроков, Минимальная предоплата */
+.about-item {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* 146% 100% 50% */
+.about-item dd {
+  font-size: 45px;
+  line-height: 64px;
+}
+
+/* % */
+.percent sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* footer Давайте дружить, это выгодно */
+.invitation h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.invitation p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* footer Контакты */
+.contacts {
+  font-size: 16px;
+  line-height: 18px;
+}
