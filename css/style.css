@@ -1,68 +1,113 @@
 :root {
-  /* body*/
   --basic-black: #000000;
-  /* main-header */
-  --basic-color-white: #EEEEEE;
-  /*main-wrapper*/
-  --main-basic-color: #888888;
-  /*main-footer*/
-  --footer-basic-color: #888888;
+  --basic-white: #FFFFFF;
+  --basic-gray: #888888;
 }
 
 .main-header {
-  background-color: var(--basic-color-white);
-  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .main-wrapper {
-  background-color: var(--main-basic-color);
-  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .main-footer {
-  background-color: var(--footer-basic-color);
-  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  background-color: var(--basic-color-white);
+  background-color: var(--basic-white);
+}
+
+/*Логотип nerds-logo*/
+.main-header-logo {
+  color: #000000;
+}
+
+/*Логоттп nerds-logo наведение*/
+.main-header-logo:hover {
+  color: #000000;
+}
+
+/*Логоттп nerds-logo нажатие*/
+.main-header-logo:active {
+  color: #A6A6A6;
 }
 
 /* Навигация Студия -- Клиенты -- Магазин -- Контакты */
 .site-navigation {
   font-size: 16px;
   line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/*Активный находимся на странице*/
+.site-navigation:visited {
+  color: #000000;
+}
+
+/*Навигация наведение*/
+.site-navigation:hover {
+  color: #FB565A;
+}
+
+/*Навигация нажатие*/
+.site-navigation:active {
+  color: #000000;
 }
 
 /* Корзина */
 .basket {
   font-size: 16px;
   line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-/* Приемущества Долго, дорого, скрупулёзно */
+/*Корзина находимся на странице*/
+.basket:visited {
+  color: #000000;
+}
+
+/*Корзина наведение*/
+.basket:hover {
+  color: #FB565A;
+}
+
+/*Корзина нажатие*/
+.basket:active {
+  color: #000000;
+}
+
+/* Долго, дорого, скрупулёзно */
 .features h2 {
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 
 .features p {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
 /* кнопки Узнать больше -- Заказать -- Напишите нам */
 .button {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /* Веб-сайты -- Приложения -- Презентации */
@@ -70,78 +115,100 @@ body {
 .item-list-first h2 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .item-list-first p {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
 /* Приложения */
 .item-list-second h2 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .item-list-second p {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
 /* Презентации */
 .item-list-third h2 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .item-list-third p {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
 /* Мы маленькая, но гордая студия из Краснодара */
 .benefits h2 {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
+/*Исповедуем принципы...*/
 .benefits p {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
+/*Выполняем заказы на разработку*/
 .benefits h3 {
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
+  color: #283136;
+  text-transform: uppercase;
 }
 
 .benefits-list {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
-/* Уровень самоотдачи */
+/* С 2004 года любим точность во всем: */
 .preview h3 {
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Уровень саиоотдачи, Соблюдение сроков, Минимальная предоплата */
 .about-item {
   font-size: 16px;
   line-height: 18px;
+  color: #283136;
 }
 
 /* 146% 100% 50% */
-.about-item dd {
+.percent {
   font-size: 45px;
   line-height: 64px;
+  font-weight: bold;
 }
 
 /* % */
 .percent sup {
   font-size: 26px;
   line-height: 40px;
+  font-weight: bold;
 }
 
 /* footer Давайте дружить, это выгодно */
@@ -156,7 +223,24 @@ body {
 }
 
 /* footer Контакты */
+/*NЁRDS DESIGN STUDIO*/
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*Контакты*/
 .contacts {
   font-size: 16px;
   line-height: 18px;
+  color: #666666;
+}
+
+/* Телефонный номер */
+.contacts-phone {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
 }
