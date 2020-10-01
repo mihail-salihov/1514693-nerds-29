@@ -7,6 +7,16 @@
   --basic-dark-gray: #283136;
   --basic-dim-gray: #666666;
   --basic-bright-red: #FB565A;
+  /* цвета только из каталога*/
+  --basic-card-gray: #4D4D4D;
+  --basic-smoky-gray: #F2F2F2;
+  --basic-dusty-gray: #E1E1E1;
+  --basic-aluminum-gray: #ABABAB;
+  --basic-plant-green: #00CA74;
+  --basic-light-black: #231F20;
+  --basic-dusty-black: #444444;
+  --basic-mouse-gray: #D7DCDF;
+  --basic-alto-gray: #DBDBDB;
 }
 
 .main-header {
@@ -53,6 +63,11 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
+}
+
+/*Убрал подчеркивание у всех сслыок в body*/
+.page-body a {
+  text-decoration: none;
 }
 
 /*Активный находимся на странице*/
@@ -227,6 +242,7 @@ body {
 .invitation p {
   font-size: 16px;
   line-height: 22px;
+  color: var(--basic-dusty-black);
 }
 
 /* footer Контакты */
@@ -250,4 +266,57 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-dim-gray);
+}
+
+/*Разметка только элементов КАТАЛОГА*/
+.catalog-wrapper h1 {
+  background-color: var(--basic-light-gray);
+}
+
+/*Магазин готовых шаблонов*/
+.catalog-wrapper h2 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+/*SEDONA*/
+.title-product-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/*Информационный сайт для туристов*/
+.desk-product-card {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-dim-gray);
+}
+
+/*кнопки каталога 1, 2, 3*/
+.catalog-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+/*кнопки каталога 1, 2, 3 - нажатие*/
+.catalog-list:active {
+  opacity: 0.3;
+}
+
+/*Следующая*/
+.catalog-list-next {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-decoration: none;
 }
