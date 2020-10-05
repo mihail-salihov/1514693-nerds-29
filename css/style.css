@@ -269,12 +269,9 @@ body {
 }
 
 /*Разметка только элементов КАТАЛОГА*/
+/*Магазин готовых шаблонов*/
 .catalog-wrapper h1 {
   background-color: var(--basic-light-gray);
-}
-
-/*Магазин готовых шаблонов*/
-.catalog-wrapper h2 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -308,7 +305,7 @@ body {
 }
 
 /*кнопки каталога 1, 2, 3 - нажатие*/
-.catalog-list:active {
+.catalog-list a:active {
   opacity: 0.3;
 }
 
