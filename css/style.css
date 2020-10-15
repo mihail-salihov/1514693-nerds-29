@@ -29,6 +29,9 @@
 
 .main-footer {
   background-color: var(--basic-white);
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
 }
 
 body {
@@ -41,8 +44,72 @@ body {
   background-color: var(--basic-white);
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+min-height: 100%;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+align-content: start;
+}
+
+/*навигация*/
+.main-navigation {
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  grid-template-columns: min-content 1fr min-content;
+}
+
+/*партнеры*/
+.partners {
+  display: grid;
+  outline: 3px solid #ff5500;
+  outline-offset: -3px;
+}
+
+/*Кнопка «nёrd's» на карте в подвале*/
+.map button {
+  display: grid;
+  outline: 3px solid #dd9900;
+  outline-offset: -3px;
+}
+
+/*вконтакте фейсбук инстаграм*/
+.footer-social {
+  display: grid;
+  outline: 3px solid #ff1100;
+  outline-offset: -3px;
+}
+
+/*Давайте дружить, это выгодно*/
+.invitation {
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+}
+
+/*контакты*/
+.contacts {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*карта*/
+.map {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
 /*Логотип nerds-logo*/
 .main-header-logo {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
   color: var(--basic-black);
 }
 
@@ -58,6 +125,9 @@ body {
 
 /* Навигация Студия -- Клиенты -- Магазин -- Контакты */
 .site-navigation {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -88,6 +158,9 @@ body {
 
 /* Корзина */
 .basket {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -103,6 +176,84 @@ body {
 .basket:active {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+/*Долго, дорого, скрупулёзно и Слайдер*/
+.features {
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Долго, дорого, скрупулёзно*/
+.features-presentation {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Слайдер*/
+.features-slider {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Веб-сайты Приложения Презентации*/
+.catalog-item {
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  column-gap: 100px;
+  list-style: none;
+}
+
+/*Веб-сайты*/
+.item-list-first {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Приложения*/
+.item-list-second {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Презентации*/
+.item-list-third {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Общий блок benefits и preview*/
+.benefits-preview {
+  display: grid;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/*Мы маленькая, но гордая дизайн-студия...*/
+.benefits {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+}
+
+/*Общий блок Год рождения Дизайн-студии и С 2004 года...*/
+.preview {
+  display: grid;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
 }
 
 /* Долго, дорого, скрупулёзно */
