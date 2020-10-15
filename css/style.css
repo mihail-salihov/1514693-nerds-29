@@ -49,10 +49,10 @@ body {
 }
 
 .page-body {
-min-height: 100%;
-display: grid;
-grid-template-rows: min-content 1fr min-content;
-align-content: start;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 /*навигация*/
@@ -240,7 +240,6 @@ align-content: start;
   outline-offset: -3px;
   grid-template-columns: 1fr 1fr;
 }
-
 
 /*Мы маленькая, но гордая дизайн-студия...*/
 .benefits {
