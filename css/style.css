@@ -59,13 +59,6 @@ body {
   padding: 0 20px;
 }
 
-/*ширина контентной области Каталог*/
-.catalog-wrapper {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /*навигация*/
 .main-navigation {
   display: grid;
@@ -325,25 +318,25 @@ body {
 }
 
 /*Разметка только элементов КАТАЛОГА*/
-/*Сетка Формы и Карточки товара*/
-.product-list ul {
+/*main Каталог*/
+.catalog {
   display: grid;
   outline: 3px solid #ff0077;
   outline-offset: -3px;
-  gap: 40px;
-  grid-template-rows: 620px 620px 620px;
-  grid-template-columns: 360px 360px;
 }
 
+/*Магазин готовых шаблонов*/
+.catalog-header {
+  background-color: var(--basic-light-gray);
+}
 
 /*Магазин готовых шаблонов*/
-.catalog-wrapper h1 {
-  background-color: var(--basic-light-gray);
+.catalog-header h1 {
+/*  background-color: var(--basic-light-gray);*/
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
-  text-align: center;
 }
 
 /*SEDONA*/
