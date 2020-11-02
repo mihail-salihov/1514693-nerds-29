@@ -318,6 +318,15 @@ body {
 }
 
 /*Разметка только элементов КАТАЛОГА*/
+/*блок Формы + блок Карточки*/
+.wrapper.catalog {
+  display: grid;
+  outline: 3px solid #ff1100;
+  outline-offset: -3px;
+  grid-template-columns: 260px 760px;
+  column-gap: 140px;
+}
+
 /*main Каталог*/
 .catalog {
   display: grid;
@@ -332,7 +341,6 @@ body {
 
 /*Магазин готовых шаблонов*/
 .catalog-header h1 {
-/*  background-color: var(--basic-light-gray);*/
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
