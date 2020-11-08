@@ -67,9 +67,18 @@ body {
   grid-template-columns: 160px 840px 160px;
 }
 
+.main-navigation.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Логотип nerds-logo*/
 .main-header-logo {
   color: var(--basic-black);
+}
+
+.main-header-logo img {
+  justify-content: flex-start;
 }
 
 /*Логоттп nerds-logo наведение*/
@@ -84,11 +93,21 @@ body {
 
 /* Навигация Студия -- Клиенты -- Магазин -- Контакты */
 .site-navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.site-navigation li {
+  display: flex;
+  margin: auto 46px;
 }
 
 /*Убрал подчеркивание у всех сслыок в body*/
@@ -114,7 +133,7 @@ body {
 
 /* Корзина */
 .basket {
-  display: grid;
+  align-self: center;
   outline: 3px solid #ff0000;
   outline-offset: -3px;
   font-size: 16px;
@@ -168,6 +187,12 @@ body {
 }
 
 /* Веб-сайты -- Приложения -- Презентации */
+.item-list {
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  width: 300px;
+}
+
 .item-list h2 {
   font-size: 24px;
   line-height: 30px;
@@ -179,6 +204,26 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-dark-gray);
+}
+
+/*кнопки Заказать*/
+.item-list .button {
+  display: flex;
+  justify-content: flex-start;
+  width: 160px;
+  height: 50px;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+}
+
+/*кнопка Заказать*/
+.features-presentation .button {
+  display: flex;
+  justify-content: flex-start;
+  width: 240px;
+  height: 50px;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
 }
 
 /* кнопки Узнать больше -- Заказать -- Напишите нам */
@@ -270,13 +315,59 @@ body {
   column-gap: 95px 104px 120px;
 }
 
+/*htmlacademy*/
+.partners a:first-child {
+  display: flex;
+  outline: 3px solid #ff0077;
+  outline-offset: -3px;
+  width: 199px;
+  margin-left: 32px;
+}
+
+/*барбершоп Бородинский*/
+.partners a:nth-child(2) {
+  display: flex;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+  margin-left: 95px;
+}
+
+/*Пинк*/
+.partners a:nth-child(3) {
+  display: flex;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+  margin-left: 104px;
+}
+
+/*Мишка*/
+.partners a:nth-child(4) {
+  display: flex;
+  outline: 3px solid #ff0000;
+  outline-offset: -3px;
+  margin-left: 120px;
+  margin-right: 43px;
+  width: 173px;
+}
+
 /*вконтакте фейсбук инстаграм*/
+.footer-social-items {
+  display: flex;
+  width: 260px;
+  align-items: center;
+}
+
 .footer-social {
   display: grid;
   outline: 3px solid #ff1100;
   outline-offset: -3px;
-  grid-template-columns: 81px 81px 81px;
-  column-gap: 7px;
+  grid-template-columns: 260px 540px;
+  grid-template-rows: 217px;
+  column-gap: 140px;
+}
+
+.footer-social-items div {
+  margin: 7px;
 }
 
 /* footer Давайте дружить, это выгодно */
