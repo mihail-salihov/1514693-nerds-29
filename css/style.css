@@ -68,8 +68,7 @@ body {
 }
 
 .main-navigation.wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
 }
 
 /*Логотип nerds-logo*/
@@ -106,8 +105,7 @@ body {
 }
 
 .site-navigation li {
-  display: flex;
-  margin: auto 46px;
+  margin: auto 23px;
 }
 
 /*Убрал подчеркивание у всех сслыок в body*/
@@ -133,7 +131,9 @@ body {
 
 /* Корзина */
 .basket {
+  display: flex;
   align-self: center;
+  justify-content: flex-end;
   outline: 3px solid #ff0000;
   outline-offset: -3px;
   font-size: 16px;
@@ -312,42 +312,12 @@ body {
   outline: 3px solid #ff5500;
   outline-offset: -3px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 95px 104px 120px;
+  column-gap: 40px;
 }
 
-/*htmlacademy*/
-.partners a:first-child {
+.partners a {
   display: flex;
-  outline: 3px solid #ff0077;
-  outline-offset: -3px;
-  width: 199px;
-  margin-left: 32px;
-}
-
-/*барбершоп Бородинский*/
-.partners a:nth-child(2) {
-  display: flex;
-  outline: 3px solid #ff0000;
-  outline-offset: -3px;
-  margin-left: 95px;
-}
-
-/*Пинк*/
-.partners a:nth-child(3) {
-  display: flex;
-  outline: 3px solid #ff0000;
-  outline-offset: -3px;
-  margin-left: 104px;
-}
-
-/*Мишка*/
-.partners a:nth-child(4) {
-  display: flex;
-  outline: 3px solid #ff0000;
-  outline-offset: -3px;
-  margin-left: 120px;
-  margin-right: 43px;
-  width: 173px;
+  justify-content: center;
 }
 
 /*вконтакте фейсбук инстаграм*/
