@@ -59,16 +59,12 @@ body {
   padding: 0 20px;
 }
 
-/*навигация*/
-.main-navigation {
+.main-navigation.wrapper {
   display: grid;
   outline: 3px solid #ff0077;
   outline-offset: -3px;
   grid-template-columns: 160px 840px 160px;
-}
 
-.main-navigation.wrapper {
-  display: grid;
 }
 
 /*Логотип nerds-logo*/
@@ -386,30 +382,74 @@ body {
   outline-offset: -3px;
   grid-template-columns: 260px 760px;
   column-gap: 140px;
+
 }
 
-/*main Каталог*/
-.catalog {
-  display: grid;
-  outline: 3px solid #ff0077;
+/* форма фильтра СТОИМОСТЬ*/
+.cost {
+  display: flex;
+  outline: 3px solid #0000ff;
   outline-offset: -3px;
 }
 
 /*Магазин готовых шаблонов*/
 .catalog-header {
+  display: flex;
   background-color: var(--basic-light-gray);
 }
 
 /*Магазин готовых шаблонов*/
 .catalog-header h1 {
+  display: flex;
+  justify-content: center;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
 }
 
-/*SEDONA*/
+/*Контейнер для карточек товара*/
+.product-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/*Карта SEDONA*/
+.product-card1 {
+  position: relative;
+}
+
+/*button 9 900*/
+.product-card1 button {
+  position: absolute;
+  bottom: 44px;
+  right: 80px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--basic-bright-red);
+  border: inherit;
+  border-radius: 3px;
+  color: var(--basic-white);
+}
+
+/*фон для button 9 900*/
+.button-background {
+  position: absolute;
+  background-color: var(--basic-light-gray);
+  width: 360px;
+  height: 231px;
+  bottom: 11px;
+}
+
+/*Надпись SEDONA*/
 .title-product-card {
+  position: absolute;
+  bottom: 175px;
+  right: 145px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -418,32 +458,65 @@ body {
 }
 
 /*Информационный сайт для туристов*/
-.desk-product-card {
+.desc-product-card {
+  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-dim-gray);
+  right: 53px;
+  bottom: 115px;
 }
 
 /*кнопки каталога 1, 2, 3*/
-.catalog-list {
+.pagination-list {
+  display: flex;
+  list-style: none;
+  outline: 3px solid #0000ff;
+  outline-offset: -3px;
+  justify-content: flex-start;
+}
+
+.button.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: var(--basic-black);
   text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-right: 10px;
 }
 
 /*кнопки каталога 1, 2, 3 - нажатие*/
-.catalog-list a:active {
+.pagination-link a:active {
   opacity: 0.3;
 }
 
 /*Следующая*/
-.catalog-list-next {
+.button.pagination-link-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
   text-decoration: none;
+  background-color: var(--basic-light-gray);
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-right: 310px;
 }
